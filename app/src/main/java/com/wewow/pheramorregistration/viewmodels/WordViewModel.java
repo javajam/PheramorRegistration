@@ -10,6 +10,9 @@ import com.wewow.pheramorregistration.models.WordRepository;
 
 import java.util.List;
 
+/**
+ *
+ */
 public class WordViewModel extends AndroidViewModel {
     private WordRepository mRepository;
     private LiveData<List<Word>> mAllWords;
@@ -27,6 +30,4 @@ public class WordViewModel extends AndroidViewModel {
     public void insert(Word word) {
         mRepository.insert(word);
     }
-
-
 }
